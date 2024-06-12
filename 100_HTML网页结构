@@ -1,0 +1,192 @@
+HTML（超文本标记语言）是构建网页的标准标记语言，它描述了网页的结构。HTML使用标签（tag）来定义内容的不同部分。每个标签通常由一个起始标签和一个结束标签组成，内容放在这两个标签之间。HTML文档有一个基本的结构，通常包括以下部分：
+
+### HTML 文档的基本结构
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- 页头内容 -->
+    </header>
+    <nav>
+        <!-- 导航栏内容 -->
+    </nav>
+    <main>
+        <!-- 主要内容 -->
+    </main>
+    <footer>
+        <!-- 页脚内容 -->
+    </footer>
+</body>
+</html>
+```
+
+### 各部分介绍
+1. **DOCTYPE 声明**
+    ```html
+    <!DOCTYPE html>
+    ```
+    DOCTYPE 声明位于文档的最前面，用于告知浏览器使用 HTML5 文档类型。
+
+2. **html 标签**
+    ```html
+    <html lang="en">
+    ...
+    </html>
+    ```
+    `html` 标签是 HTML 文档的根元素。`lang` 属性指定文档的语言。
+
+3. **head 标签**
+    ```html
+    <head>
+    ...
+    </head>
+    ```
+    `head` 标签包含有关文档的信息（元数据），如标题、字符集、样式表、脚本等。
+
+    - **meta 标签**
+        ```html
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        ```
+        `meta` 标签用于指定元数据。`charset` 属性定义文档的字符编码，`viewport` 属性有助于响应式设计。
+
+    - **title 标签**
+        ```html
+        <title>Document</title>
+        ```
+        `title` 标签定义文档的标题，显示在浏览器标签栏中。
+
+4. **body 标签**
+    ```html
+    <body>
+    ...
+    </body>
+    ```
+    `body` 标签包含文档的主体内容，包括文本、图像、链接、表格等。
+
+### 常见的 HTML 标签
+
+1. **文本标签**
+    - 段落标签：`<p>`
+        ```html
+        <p>This is a paragraph.</p>
+        ```
+    - 标题标签：`<h1>` 到 `<h6>`
+        ```html
+        <h1>This is a heading</h1>
+        <h2>This is a subheading</h2>
+        ```
+    - 强调文本：`<strong>` 和 `<em>`
+        ```html
+        <strong>Strong text</strong>
+        <em>Emphasized text</em>
+        ```
+
+2. **链接和图片**
+    - 链接：`<a>`
+        ```html
+        <a href="https://example.com">This is a link</a>
+        ```
+    - 图片：`<img>`
+        ```html
+        <img src="image.jpg" alt="Description of image">
+        ```
+
+3. **列表**
+    - 无序列表：`<ul>` 和 `<li>`
+        ```html
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        ```
+    - 有序列表：`<ol>` 和 `<li>`
+        ```html
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        ```
+
+4. **表格**
+    ```html
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </tbody>
+    </table>
+    ```
+
+5. **表单**
+    ```html
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+    ```
+
+### 完整示例
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Webpage</p>
+    </footer>
+</body>
+</html>
+```
+
+这个示例展示了一个包含基本结构的 HTML 文档，包含页头、导航、主要内容和页脚。通过学习和理解这些基本结构和标签，可以创建和修改自己的网页。
